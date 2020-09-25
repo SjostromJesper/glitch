@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --neon-text-color: #ec2cff;
+    --neon-sign-color: #4eff23;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    /*background-image: url("https://images5.alphacoders.com/364/thumb-1920-364342.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.neon-text {
+    padding: 100px 300px;
+
+    font-size: 9.5em;
+    letter-spacing: 70px;
+    font-weight: 600;
+    color: white;
+
+    /*border: 5px solid #fff;*/
+    /*border-radius: 15px;*/
+
+    animation: blink 1.5s infinite ;
+}
+
+@keyframes blink {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        text-shadow:
+                -0.2rem -0.2rem 1rem #fff,
+                0.2rem 0.2rem 1rem #fff,
+                0 0 2rem var(--neon-text-color),
+                0 0 4rem var(--neon-text-color),
+                0 0 6rem var(--neon-text-color),
+                0 0 8rem var(--neon-text-color),
+                0 0 10rem var(--neon-text-color);
+
+        /*box-shadow:*/
+        /*        0 0 .5rem #fff,*/
+        /*        inset 0 0 .5rem #fff,*/
+        /*        0 0 2rem var(--neon-sign-color),*/
+        /*        inset 0 0 2rem var(--neon-sign-color),*/
+        /*        0 0 4rem var(--neon-sign-color),*/
+        /*        inset 0 0 4rem var(--neon-sign-color);*/
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
