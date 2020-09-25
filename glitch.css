@@ -3,10 +3,7 @@
     margin: 0;
 }
 
-:root {
-    --neon-text-color: #ec2cff;
-    --neon-sign-color: #4eff23;
-}
+
 
 body {
     font-family: 'Exo 2', sans-serif;
@@ -16,22 +13,10 @@ body {
     align-items: center;
 
     background-color: black;
-    /*background-image: url("https://images5.alphacoders.com/364/thumb-1920-364342.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
 
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
-
-
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .neon-text {
@@ -55,19 +40,19 @@ body {
         text-shadow:
                 -0.2rem -0.2rem 1rem #fff,
                 0.2rem 0.2rem 1rem #fff,
-                0 0 2rem var(--neon-text-color),
-                0 0 4rem var(--neon-text-color),
-                0 0 6rem var(--neon-text-color),
-                0 0 8rem var(--neon-text-color),
-                0 0 10rem var(--neon-text-color);
+                0 0 2rem #ec2cff,
+                0 0 4rem #ec2cff,
+                0 0 6rem #ec2cff,
+                0 0 8rem #ec2cff,
+                0 0 10rem #ec2cff;
 
         /*box-shadow:*/
         /*        0 0 .5rem #fff,*/
         /*        inset 0 0 .5rem #fff,*/
-        /*        0 0 2rem var(--neon-sign-color),*/
-        /*        inset 0 0 2rem var(--neon-sign-color),*/
-        /*        0 0 4rem var(--neon-sign-color),*/
-        /*        inset 0 0 4rem var(--neon-sign-color);*/
+        /*        0 0 2rem #4eff23,*/
+        /*        inset 0 0 2rem #4eff23,*/
+        /*        0 0 4rem #4eff23,*/
+        /*        inset 0 0 4rem #4eff23;*/
     }
 
     20%, 24%, 55% {
